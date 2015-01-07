@@ -1,7 +1,45 @@
 body
 {
 	background-color: #008aff;
+	margin: 0;
 }
+
+#top_menu
+{
+	background-color: #ffffff;
+}
+
+#horizontalmenu ul 
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#horizontalmenu li 
+{
+	float: right;
+	position: relative;
+	padding-right: 20;
+	display: block;
+	border: 3px solid; #000000; 
+	border-style: inset;
+}
+
+#horizontalmenu li ul 
+{
+	display: none;
+	position: absolute;
+}
+
+#horizontalmenu li:hover ul
+{
+	clear : both;
+	border-style: none;
+}
+
+
+
 
 
 
