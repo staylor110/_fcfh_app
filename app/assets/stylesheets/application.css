@@ -1,47 +1,38 @@
 body
 {
-	background-color: #008aff;
+	background-color: #80CCFF;
 	margin: 0;
+}
+
+
+
+#top_menu_container
+{
+	padding: 0;
+	margin: 0;
+	background-color: #1A2933;
+	width: 100%;
+	height: 36px;
+	text-align: center;
 }
 
 #top_menu
 {
-	background-color: #ffffff;
+	width: 940px;
+	margin: 0, auto;
+	padding: 5px;
+	color: #D9F0FF;
+	font-size: 18px;
+	font-family: Calibri;
+	text-align: right;
+	
 }
 
-#horizontalmenu ul 
+#container 
 {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+	width: 940px;
+	margin: 0, auto;
 }
-
-#horizontalmenu li 
-{
-	float: right;
-	position: relative;
-	padding-right: 20;
-	display: block;
-	border: 3px solid; #000000; 
-	border-style: inset;
-}
-
-#horizontalmenu li ul 
-{
-	display: none;
-	position: absolute;
-}
-
-#horizontalmenu li:hover ul
-{
-	clear : both;
-	border-style: none;
-}
-
-
-
-
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
