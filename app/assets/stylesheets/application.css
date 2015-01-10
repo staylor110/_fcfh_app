@@ -28,26 +28,17 @@ body
 
 .top_menu
 {
-	color: #D9F0FF;
-	font-size: 18px;
-	font-family: Calibri;
+
 	text-align: right;
 }
 
 
 /* General Menu Settings */
 nav a {
-	/*position: relative;
-	display: inline-block;
-	margin: 15px 25px; */
 	outline: none;
 	color: #D9F0FF;
 	text-decoration: none;
-	/* text-transform: uppercase; 
-	letter-spacing: 1px;
-	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3); */
-	font-size: 18px;
+	font-size: .9em;
 	font-family: Calibri;
 	text-align: right;
 }
@@ -57,12 +48,10 @@ nav a:focus {
 	outline: none;
 }
 
-
-
-
 /* Effect 1: Brackets */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
+
+.top_menu a::before,
+.top_menu a::after {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -70,15 +59,15 @@ nav a:focus {
 	transition: transform 0.3s, opacity 0.2s;
 }
 
-.cl-effect-1 a::before {
-	margin-right: 10px;
+.top_menu a::before {
+	margin-right: 5px;
 	content: '[';
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
 	transform: translateX(20px);
 }
 
-.cl-effect-1 a::after {
+.top_menu a::after {
 	margin-left: 10px;
 	content: ']';
 	-webkit-transform: translateX(-20px);
@@ -86,15 +75,16 @@ nav a:focus {
 	transform: translateX(-20px);
 }
 
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
+.top_menu a:hover::before,
+.top_menu a:hover::after,
+.top_menu a:focus::before,
+.top_menu a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
+
 
 
 /*
