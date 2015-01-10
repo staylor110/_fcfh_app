@@ -1,0 +1,120 @@
+/*
+ * Simple CSS stylesheet for a navigation bar and flash messages.
+ */
+body
+{
+  background-color: #80CCFF;
+  margin: 0;
+}
+
+header, main {
+
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+header 
+{
+  background-color: #1A2933;
+  height: 36px; 
+}
+
+.top_menu, .content
+{
+  width: 1024px;
+  margin: 0, auto;
+  padding: 10px;
+}
+
+.top_menu
+{
+  text-align: right;
+}
+
+
+/* General Menu Settings */
+nav a {
+  outline: none;
+  color: #D9F0FF;
+  text-decoration: none;
+  font-size: .9em;
+  font-family: Calibri;
+  text-align: right;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+}
+
+/* Effect 1: Brackets */
+
+.top_menu a::before,
+.top_menu a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.top_menu a::before {
+  margin-right: 5px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.top_menu a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.top_menu a:hover::before,
+.top_menu a:hover::after,
+.top_menu a:focus::before,
+.top_menu a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+
+
+
+
+
+
+
+/* ----------   Flash Notices Style --------------------------*/
+.flash_notice, .flash_alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.flash_notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.flash_alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+

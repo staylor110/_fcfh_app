@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<head>
-  		<title>Fall Creek Funeral Home</title>
-  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  		<%= csrf_meta_tags %>
-  		<meta http-equiv="Content-Type" content="charset=utf-8" />
-	</head>
-
-	<body>
-		<!--  Navigation Menu  -->
-		<div id="top_menu_container">
-			<nav class="top_menu">
-				<a href="localhost:3000">Home</a> 
-				<a href="localhost:3000/pages/about/">About</a> 
-				<a href="localhost:3000/pages/contact">Contact Us</a> 
-			</nav>
-		</div>
-
-		<div id="container">
-			<div class="content">
-				<%= yield %>
-			</div>
-		</div>
-
-	</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Fall Creek Funeral Home" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Fcfh App" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+      <div class="content">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </main>
+  </body>
 </html>
