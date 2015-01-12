@@ -12,8 +12,6 @@ header, main {
   padding: 0;
   margin: 0;
   width: 100%;
-  text-align: center;
-
 }
 
 header 
@@ -24,16 +22,22 @@ header
 
 .top_menu, .content
 {
-  width: 1024px;
-  margin: 0, auto;
-  padding: 10px;
+  width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .top_menu
 {
   text-align: right;
+  padding: 10px;
 }
 
+.content
+{
+  padding: 0;
+}
 
 /* General Menu Settings */
 nav a {
