@@ -7,6 +7,7 @@ body
   margin: 0;
 }
 
+/* Entire Website Frame */
 header, main {
 
   padding: 0;
@@ -16,11 +17,12 @@ header, main {
 
 header 
 {
-  background-color: #1A2933;
-  height: 36px; 
+  height: 73px; 
 }
 
-.top_menu, .content
+
+/* Upper header and navigation bar */
+.upper_header, .top_menu, .content
 {
   width: 945px;
   margin-left: auto;
@@ -28,10 +30,19 @@ header
   
 }
 
+.upper_header
+{
+   height: 36px; 
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
 .top_menu
 {
   text-align: right;
   padding: 10px;
+  height: 36px;
+  background-color: #1A2933;
 }
 
 .content
