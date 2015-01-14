@@ -15,10 +15,6 @@ header, main {
   width: 100%;
 }
 
-/* header 
-{
-  height: 73px; 
-} */
 
 
 /* Upper header and navigation bar */
@@ -39,12 +35,46 @@ header, main {
 
 }
 
+
+
+.mid_header
+{
+  text-align:right;
+  padding-top: 64px;
+  padding-right: 15px;
+  font-family: Verdana;
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #335CD6;
+}
+
+.right_header
+{
+  padding-top: 48px;
+}
+
+
+.left_header, .mid_header, .right_header
+{
+  float: left;
+  width: 30%;
+ /*  border: 1px solid;
+  border-color: gray;  */
+}
+
+
+
 .top_menu
 {
   text-align: right;
-  padding: 10px;
+  padding-top: 10px;
   height: 36px;
   background-color: #1A2933;
+  padding-bottom: 0px;
+
+  /* border: 2px solid;
+  border-color: white; */
+  
 }
 
 .content
@@ -52,12 +82,15 @@ header, main {
   padding: 0;
 }
 
+
+
+
 /* General Menu Settings */
 nav a {
   outline: none;
   color: #D9F0FF;
   text-decoration: none;
-  font-size: .9em;
+  font-size: 1em;
   font-family: Calibri;
   text-align: right;
 }
@@ -67,7 +100,7 @@ nav a:focus {
   outline: none;
 }
 
-/* Effect 1: Brackets */
+/* Top Navigation Menu Effect */
 
 .top_menu a::before,
 .top_menu a::after {
