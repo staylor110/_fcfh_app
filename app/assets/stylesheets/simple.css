@@ -15,16 +15,16 @@ header, main {
   width: 100%;
 }
 
-header 
+/* header 
 {
   height: 73px; 
-}
+} */
 
 
 /* Upper header and navigation bar */
 .upper_header, .top_menu, .content
 {
-  width: 945px;
+  width: 1024px;
   margin-left: auto;
   margin-right: auto;
   
@@ -32,9 +32,11 @@ header
 
 .upper_header
 {
-   height: 36px; 
+   height: 96px; 
    margin-top: 0;
    margin-bottom: 0;
+   background-color: #FFFFFF;
+   
 }
 
 .top_menu
