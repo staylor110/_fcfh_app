@@ -3,10 +3,31 @@
  */
 body
 {
-  background-color: #80CCFF;
   margin: 0;
 }
 
+#wrapper
+{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #FFFFFF;
+  width: 96%;
+}
+
+@media screen and (max-width: 600px)
+{
+  #wrapper
+  {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #000000;
+    width: 96%;   
+  }
+}
 /* Entire Website Frame */
 header, main {
 
@@ -18,48 +39,66 @@ header, main {
 
 
 /* Upper header and navigation bar */
-.upper_header, .top_menu, .content
+#upper_header, .top_menu, #content
 {
-  width: 1024px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   
 }
 
-.upper_header
+#upper_header
 {
-   height: 112px; 
+   height: 7em; 
    margin-top: 0;
    margin-bottom: 0;
    background-color: #FFFFFF;
 
+
+}
+
+#left_header
+{
+  width: 16.4203612479%;
+}
+
+#mid_header
+{
+
+  width: 40%;
+  text-align: right;
+
 }
 
 
-
-.mid_header
+#right_header
 {
-  text-align:right;
-  padding-top: 64px;
-  padding-right: 15px;
+  width:40%;
+  text-align: right;
+}
+
+#left_header, #mid_header, #right_header
+{
+  display: inline-block;
+  height: 98%;
+  vertical-align: top;
+
+  /* border: 1px solid;
+  border-color: gray; */
+
+  
+}
+
+.header_text
+{
+  padding-right: 1.171875%;
   font-family: Verdana;
   text-transform: uppercase;
   font-size: .7em;
   color: #335CD6;
-}
+  display: block;
+  padding-top: 10%;
 
-.right_header
-{
-  padding-top: 48px;
-}
-
-
-.left_header, .mid_header, .right_header
-{
-  float: left;
-  width: 30%;
- /*  border: 1px solid;
-  border-color: gray;  */
 }
 
 
@@ -67,7 +106,7 @@ header, main {
 .top_menu
 {
   text-align: right;
-  padding-top: 10px;
+  padding-top: .650em;
   height: 36px;
   background-color: #1A2933;
   padding-bottom: 0px;
@@ -77,12 +116,10 @@ header, main {
   
 }
 
-.content
+#content
 {
   padding: 0;
 }
-
-
 
 
 /* General Menu Settings */
@@ -92,7 +129,7 @@ nav a {
   text-decoration: none;
   font-size: 1em;
   font-family: Calibri;
-  text-align: right;
+  /*text-align: right;*/
 }
 
 nav a:hover,
