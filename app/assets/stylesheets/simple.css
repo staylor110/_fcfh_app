@@ -3,7 +3,9 @@
  */
 body
 {
-  margin: 0;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:8px;
 }
 
 #wrapper
@@ -65,7 +67,7 @@ header, main {
 #mid_header
 {
 
-  width: 40%;
+  width: 55%;
   text-align: right;
 
 }
@@ -73,8 +75,8 @@ header, main {
 
 #right_header
 {
-  width:40%;
-  text-align: right;
+  width:25%;
+  text-align: center;
 }
 
 #left_header, #mid_header, #right_header
@@ -97,7 +99,7 @@ header, main {
   font-size: .7em;
   color: #335CD6;
   display: block;
-  padding-top: 10%;
+  padding-top: 3%;
 
 }
 
