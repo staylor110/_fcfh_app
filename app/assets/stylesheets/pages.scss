@@ -1,3 +1,60 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* -----  Variables  ------------- */
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #335CD6;
+
+
+@mixin text_set1($align: left, $sz: 95%, $wt: normal)
+{
+	text-align: $align;
+	font: $sz $font-stack;
+	color: $primary-color;
+	font-weight: $wt;
+}
+
+/* -----  Home Page Layout ------ */
+
+.poster
+{
+	width: 100%;
+}
+
+.intro_article
+{
+	width: 100%;
+}
+
+.intro_article_left, .intro_article_right
+{
+	display: inline-block;
+	width: 48%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+h1
+{
+	@include text_set1(center, 150%, bold);
+}
+
+h2
+{
+	@include text_set1(left, 115%, bold);
+}
+
+h3
+{
+	@include text_set1(left, 105%, bold);
+	font-style: italic;
+
+}
+
+p.intro
+{
+	@include text_set1;
+}
+

@@ -62,7 +62,35 @@ header, main {
 #left_header
 {
   width: 16.4203612479%;
+  -webkit-animation: drop-logo 1s;  /* Chrome, Safari, Opera */
+  animation: drop-logo 1s;
 }
+
+/* Animation Chrome, Safari, Opera */
+@-webkit-keyframes drop-logo
+{
+  from{
+    margin-top: -50px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+
+}
+
+@keyframes drop-logo
+{
+  from{
+    margin-top: -50px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+
+/* Animation Standard syntax */
 
 #mid_header
 {
@@ -175,12 +203,6 @@ nav a:focus {
   -moz-transform: translateX(0px);
   transform: translateX(0px);
 }
-
-
-
-
-
-
 
 
 /* ----------   Flash Notices Style --------------------------*/
