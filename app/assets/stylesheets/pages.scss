@@ -6,6 +6,7 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #335CD6;
+$secondary-color: #000000;
 $icon-menu-background-color: #DDD;
 
 
@@ -14,6 +15,14 @@ $icon-menu-background-color: #DDD;
 	text-align: $align;
 	font: $sz $font-stack;
 	color: $primary-color;
+	font-weight: $wt;
+}
+
+@mixin text_set2($align: left, $sz: 95%, $wt: normal)
+{
+	text-align: $align;
+	font: $sz $font-stack;
+	color: $secondary-color;
 	font-weight: $wt;
 }
 
@@ -62,8 +71,25 @@ p.intro
 
 /* -------------------------  Picture Menu -------------- */
 
+h1.icon
+{
+	@include text_set2(center, 105%, bold);	
+}
+
 .icon_menu
 {
 	width: 100%;
 	background-color: $icon-menu-background-color;
+}
+
+.icon_single
+{
+	width: 22%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-left: 10px;
+	padding-right:10px;
 }
