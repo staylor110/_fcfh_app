@@ -6,6 +6,7 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #335CD6;
+$icon-menu-background-color: #DDD;
 
 
 @mixin text_set1($align: left, $sz: 95%, $wt: normal)
@@ -59,3 +60,10 @@ p.intro
 	@include text_set1;
 }
 
+/* -------------------------  Picture Menu -------------- */
+
+.icon_menu
+{
+	width: 100%;
+	background-color: $icon-menu-background-color;
+}
