@@ -135,6 +135,7 @@ header, main {
 
 .top_menu
 {
+  position:fixed;
   text-align: right;
   padding-top: .650em;
   height: 36px;

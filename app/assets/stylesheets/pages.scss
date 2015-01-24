@@ -31,6 +31,7 @@ $icon-menu-background-color: #DDD;
 .poster
 {
 	width: 100%;
+	margin-top: 46px;
 }
 
 .intro_article
@@ -92,4 +93,51 @@ h1.icon
 	margin-bottom: 25px;
 	padding-left: 10px;
 	padding-right:10px;
+}
+
+/* ----------------------- Video Presentation ----------------- */
+.video_block
+{
+	width: 100%;
+}
+
+/* ----------------------- Photo Presentation ------------------*/
+
+.photo_block
+{
+	width: 100%;	
+}
+
+/* ----------------------- Reference Presentation ---------------*/
+
+.reference_block
+{
+	width: 100%;	
+}
+
+/* ----------------------- Partners Presentation ----------------*/
+
+.partner_block
+{
+	width: 100%;	
+}
+
+/* ----------------------- Portfolio ----------------------------*/
+.portfolio_block
+{
+	width: 100%;	
+}
+
+/* ----------------------- Footer ------------------------------*/
+
+.footer
+{
+	width: 100%;	
+}
+
+/* ----------------------- Google Map --------------------------*/
+
+.google_map
+{
+	width: 100%;	
 }
